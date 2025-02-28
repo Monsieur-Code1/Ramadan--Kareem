@@ -1,0 +1,571 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --background-color-time:aquamarine;
+    --background-color-hour:#e5d09d;
+}
+body{
+    direction: rtl;
+    background-color: #ffffff;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.photo{
+    width: 90%;
+    margin: 5px auto;
+}
+.times{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:centre;
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+
+}
+.times-son{
+    padding: 10px;
+    margin: 5px;
+    border: 7px aquamarine solid;
+}
+.first-son{
+    border-bottom: 2px solid black;
+    background-color: var(--background-color-time);
+}
+.seconde-son{
+    background-color: var(--background-color-hour);
+    color: rgb(37, 0, 110);
+}
+.navbar{
+    background-color: rgb(17, 120, 101);
+    color: black;
+}
+.times-son{
+    border: 2px solid black;
+}
+h2{
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    color: rgb(15, 36, 56);
+}
+p{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;  
+}
+.hadis{
+    width: 50%;
+    margin: 20px 10px;
+    background-color: cadetblue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.hadis-title{
+    width: 100%;
+    margin-top: 0;
+    border: 2px solid black;
+    color: black;
+    background-color: #28b67e;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.hadis-p{
+        background-color: azure;
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius:10px ;
+        -webkit-border-radius:10px ;
+        -moz-border-radius:10px ;
+        -ms-border-radius:10px ;
+        -o-border-radius:10px ;
+}
+.question-pap{
+    border: 6px solid #091564;
+    background-color: cyan;
+    width: 38%;
+    margin: 20 auto;
+    text-align: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+#question{
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.x-color-reponde{
+    color: red;
+}
+#reponse{
+    width: 80%;
+    text-align: center;
+    color: green;
+    margin: 5 auto;
+    margin: 10 auto;
+
+}
+
+.marquee-container {
+    width: 80%; /* تحديد عرض المساحة */
+    height: 50px; /* تحديد ارتفاع المساحة */
+    overflow: hidden; /* منع تجاوز النص للمساحة المحددة */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#dhikr {
+    position: absolute;
+    white-space: nowrap; /* منع النص من الانتقال لسطر جديد */
+    animation: marqueeMove 3s infinite alternate linear;
+    color: rgb(12, 24, 138);
+    font-weight: bold;
+    width: 50%;
+    margin: 5px;
+}
+
+@keyframes marqueeMove {
+    0% { left: 0; }
+    100% { left: 100%; transform: translateX(-100%); }
+}
+
+
+.pap-element2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 90%;
+
+}
+/* ________________________________________________________________________ */
+
+/* media*/
+@media (max-width:576px) {
+    .times{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width: 95%;
+        padding: 2px;
+        margin: 5px auto;
+    }
+    .times-son{
+        width: 47%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+    .pap-element2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: baseline;
+        flex-direction: column;
+        margin: 20px auto;
+        width: 90%;
+    }
+.hadis{
+        border: 2px solid black;
+        width: 90%;
+        background-color: cadetblue;
+    }
+    .question-pap{
+        width: 90%;
+    }
+  td{
+    font-size: 15px;
+  }
+.photo {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* أو تعيين عرض محدد */
+}
+
+}
+/* __________________________________________________ */
+
+@media (min-width: 577px) and (max-width: 767.98px){
+    .times{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width: 80%;
+        padding: 2px;
+        margin: 5px auto;
+    }
+    .times-son{
+        width: 47%;
+        padding: 10px;
+        margin: 5px;
+    }
+    .pap-element2{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        width: 80%;
+    }
+    .hadis{
+        border: 2px solid black;
+        width: 80%;
+        margin: 5px auto;
+        background-color: cadetblue;
+    }
+    .question-pap{
+        width: 80%;
+        margin: 5px auto;
+
+    }
+    .photo{
+        width: 300px;
+    }
+    td{
+        font-size: 14px;
+      }
+}
+.photo {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 100%; /* أو تعيين عرض محدد */
+  }
+/* ___________________________________________________*/
+
+@media (min-width: 767.98px) and (max-width: 992px){
+    .times{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width: 95%;
+        padding: 2px;
+        margin: 5px auto;
+    }
+    .times-son{
+        width: 21%;
+        padding: 10px;
+        margin: 5px;
+    }  
+    .photo {
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        width: 100%; /* أو تعيين عرض محدد */
+      }
+      td{
+        font-size: 16px;
+      }
+}
+/* ________________________________________________*/
+
+@media (min-width: 993px) and (max-width: 1199px){
+    .times{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        width: 95%;
+        padding: 2px;
+        margin: 5px auto;
+    }
+    .times-son{
+        padding: 10px;
+        margin: 5px;
+    }  
+    .photo {
+        display: block;
+        margin: 0 auto;
+        height: 350px;
+        width: 100%; /* أو تعيين عرض محدد */
+      }
+      td{
+        font-size: 20px;
+      }
+
+}
+/* _________________________________________________*/
+@media (min-width: 1200px) and (max-width: 1400px ){
+    .times{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width: 80%;
+        padding: 2px;
+        margin: 5px auto;
+    }
+    .times-son{
+        padding: 10px;
+        margin: 5px;
+    }
+    .pap-element2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: baseline;
+        flex-direction: row;
+        margin: 20px auto;
+        width: 80%;
+    }
+    .hadis{
+        border: 2px solid black;
+        width: 40%;
+        background-color: cadetblue;
+    }
+    .question-pap{
+        width: 40%;
+    }
+    .photo {
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        width: 100%; /* أو تعيين عرض محدد */
+      }
+      td{
+        font-size: 22px;
+      }
+    }
+
+/* media*/
+/* ________________________________________________________________________ */
+
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black; /* يضيف حدود للجدول */
+}
+th, td {
+    padding: 15px;
+    border: 2px solid black; /* يضيف حدود للخلايا */
+    text-align: center;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+}
+.x-row-table{
+    background-color: #eee;
+}
+
+aside{
+    color: orange;
+    background-color: rgb(6, 6, 51);
+    width: 100%;
+    padding:10px;
+    text-align: center;
+    /* position:sticky;
+    top: 0;
+  } */
+}
+aside:hover{
+    background-color: #7a0610;
+}
+.quran{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 80%;
+    gap: 20px 20px;
+    
+}
+
+.card{
+    width:90%;
+}
+.video-tit{
+  
+    margin: 10px auto;
+    text-align: center;
+}
+.papa-video{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+.video-tit{
+    width: 100%;
+    text-align: center;
+    margin:10px auto ;
+    height: 90%;
+}
+
+/* mobile - small screen*/
+@media (max-width:576px) {
+    .papa-video{
+        width: 95%;
+        text-align: center;
+    } 
+    .final{
+        width: 100%;
+        text-align: center;
+
+    }
+    .cart-final{
+        width: 100%;
+        text-align: center;
+
+    }
+    .cart-after-final{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    } 
+
+/* medium*/
+@media (min-width: 577px) and (max-width: 767.98px){
+ 
+    .papa-video{
+        width: 90%;
+        text-align: center;
+    }
+        .cart-final{
+            width: 100%;margin: 10px auto;
+        }
+        .cart-after-final{
+            width: 90%;
+            margin:  10px auto;
+        }
+        .cart-after-final{
+            width:90%;
+            margin:  10px auto;
+        }
+        }
+    
+
+
+
+@media (min-width: 767.98px) and (max-width: 992px){
+  
+    .papa-video{
+        width: 70%;
+        text-align: center;
+    } 
+        .cart-final{
+            width: 100%;
+            margin: 10px auto;
+            justify-content: space-between;
+        }
+        .cart-after-final{
+            width: 45%;
+
+        }
+        }
+
+
+
+@media (min-width: 993px) and (max-width: 1199px){
+    .papa-video{
+        width: 50%;
+        text-align: center;
+    } 
+    .cart-final{
+        width: 70%;
+        margin: 10px auto;
+        text-align: center;
+
+        }
+        .cart-final{
+            width: 100%;
+            margin: 10px auto;
+            text-align: center;
+
+        }
+        .cart-after-final{
+            width: 40%;
+            margin: 10px auto;
+            text-align: center;
+
+        }
+ 
+
+
+@media (min-width: 1200px) and (max-width: 1400px ){
+ 
+    .papa-video{
+        width: 50%;
+        
+        text-align: center;
+    } 
+    .cart-final{
+        width: 60%;margin: 10px auto;
+        }
+        .cart-final{
+            width: 60%;
+            margin: 10px auto;
+            justify-content: space-around;
+        }
+        .cart-after-final{
+            width: 40%;
+            
+        }
+        .cart-after-final{
+            width:40%;
+        }
+        }
+}
+
+
+.cart-final{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;padding: 10px;
+    }
+
+    .cart-final:hover{
+        background-color: #dcd209;
+        color: black;
+    }
+
+aside{
+    width: 100%;
+}
+
+
+
+
