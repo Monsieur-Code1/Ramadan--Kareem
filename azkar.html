@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>رمضان كريم مع مسيو عبدالرحمن</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css"> 
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
+     <style>
+      .text:hover{
+        background-color: #d51010;
+        color: rgb(255, 246, 229);
+      }
+      /* mobile - small screen*/
+@media (max-width:576px) {
+  table{
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+/* medium*/
+@media (min-width: 577px) and (max-width: 767.98px){
+  table{
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 992px){
+  table{
+    width: 70%;
+    margin: 10px auto;
+  }
+
+}
+@media (min-width: 993px) and (max-width: 1199px){
+  table{
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px ){
+  table{
+    width: 50%;
+    margin: 10px auto;
+  }
+    }
+
+      .noSelect {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+     }
+      .count{
+        background-color: orange;
+        color: black;
+        font-size: 40px;
+        cursor: pointer;
+      }
+      .count:hover{
+        background-color: aqua;
+      }
+     </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="d.png" alt="logo" width="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="information.html">معلومات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">التواصل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="azkar.html">الاستغفار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="morningNight.html">اذكار الصباح والمساء</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+      <th colspan="2" style="background-color: #0f1570; text-align: center;">جدول الاستغفار</th>
+      </tr>
+      <tr>
+      <th style="background-color: #1a817c; text-align: center;position: sticky;top: 0;">الذكر</th>
+      <th style="color: black; text-align: center; position: sticky;top: 0; background-color: lime;">اضغط علي العدد</th>
+      </tr>
+      <tr>
+      <td class="text">أستغفر الله</td>
+      <td class="count noSelect" id="count1" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">سبحان الله</td>
+      <td class="count noSelect" id="count2" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">الحمد لله</td>
+      <td class="count noSelect" id="count3" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">لا إله إلا الله</td>
+      <td class="count noSelect" id="count4" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">الله أكبر</td>
+      <td class="count noSelect" id="count5" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">لا حول ولا قوة إلا بالله العلي العظيم</td>
+      <td class="count noSelect" id="count6"  style="text-align: center;">10</td>
+      </tr>
+      <tr>
+      <td class="text">سبحان الله وبحمده</td>
+      <td class="count noSelect"  id="count7" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+      <td class="text">أستغفر الله العظيم</td>
+      <td class="count noSelect" id="count8" style="text-align: center;">100</td>
+      </tr>
+      <tr>
+        <td class="text">اللهم اعني علي طاعتك</td>
+        <td class="count noSelect" id="count9" style="text-align: center;">3</td>
+        </tr>
+        <td class="text">سبحان الله والحمد لله ولا اله الا الله والله اكبر</td>
+        <td class="count noSelect" id="count10" style="text-align: center;">10</td>
+        </tr>
+        <td class="text">لا الله الا الله وحده لا شريك له له الملك وله الحمد وهو علي كل شي قدير</td>
+        <td class="count noSelect" id="count11" style="text-align: center;">10</td>
+        </tr>
+        <td class="text">اللهم صلي وسلم وزد وبارك علي سيدنا محمد</td>
+        <td class="count noSelect" id="count12" style="text-align: center;">10</td>
+        </tr>
+        <td class="text">اللهم ارحمني برحمتك</td>
+        <td class="count noSelect" id="count13" style="text-align: center;">3</td>
+        </tr>
+        <td class="text">اللهم احسن خاتمتي</td>
+        <td class="count noSelect" id="count14" style="text-align: center;">3</td>
+        </tr>
+        <td class="text">اللهم اعني علي طاعتك</td>
+        <td class="count noSelect" id="count15" style="text-align: center;">3</td>
+        </tr>
+        <td class="text">سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته</td>
+        <td class="count noSelect" id="count16" style="text-align: center;">3</td>
+        </tr>
+      </table>
+      <script>
+        let z1=document.getElementById("count1").innerHTML
+        let z2=document.getElementById("count2").innerHTML
+        let z3=document.getElementById("count3").innerHTML
+        let z4=document.getElementById("count4").innerHTML
+        let z5=document.getElementById("count5").innerHTML
+        let z6=document.getElementById("count6").innerHTML
+        let z7=document.getElementById("count7").innerHTML
+        let z8=document.getElementById("count8").innerHTML
+        let z9=document.getElementById("count9").innerHTML
+        let z10=document.getElementById("count10").innerHTML
+        let z11=document.getElementById("count11").innerHTML
+        let z12=document.getElementById("count12").innerHTML
+        let z13=document.getElementById("count13").innerHTML
+        let z14=document.getElementById("count14").innerHTML
+        let z15=document.getElementById("count15").innerHTML
+        let z16=document.getElementById("count16").innerHTML
+
+        // ______________________________________________________________
+        // function1
+        document.getElementById("count1").addEventListener("click",function(){
+          z1-=1
+          if(z1==0){
+            document.getElementById("count1").innerHTML="100"
+            z1=100
+
+          }else{
+          document.getElementById("count1").innerHTML=`${z1}`
+          }
+        })
+        // ______________________________________________________________
+          // function2
+        document.getElementById("count2").addEventListener("click",function(){
+          z2-=1
+          if(z2==0){
+            document.getElementById("count2").innerHTML="100"
+            z2=100
+
+          }else{
+          document.getElementById("count2").innerHTML=`${z2}`
+          }
+        })
+         // ______________________________________________________________
+           // function3
+         document.getElementById("count3").addEventListener("click",function(){
+          z3-=1
+          if(z3==0){
+            document.getElementById("count3").innerHTML="100"
+            z3=100
+
+          }else{
+          document.getElementById("count3").innerHTML=`${z3}`
+          }
+        })
+         // ______________________________________________________________
+           // function4
+         document.getElementById("count4").addEventListener("click",function(){
+          z4-=1
+          if(z4==0){
+            document.getElementById("count4").innerHTML="100"
+            z4=100
+
+          }else{
+          document.getElementById("count4").innerHTML=`${z4}`
+          }
+        })
+
+        // ______________________________________________________________
+          // function5
+        document.getElementById("count5").addEventListener("click",function(){
+          z5-=1
+          if(z5==0){
+            document.getElementById("count5").innerHTML="100"
+            z5=100
+
+          }else{
+          document.getElementById("count5").innerHTML=`${z5}`
+          }
+        })
+        // ______________________________________________________________
+          // function6
+        document.getElementById("count6").addEventListener("click",function(){
+          z6-=1
+          if(z6==0){
+            document.getElementById("count6").innerHTML="10"
+            z6=10
+
+          }else{
+          document.getElementById("count6").innerHTML=`${z6}`
+          }
+        })
+        // ______________________________________________________________
+          // function7
+        document.getElementById("count7").addEventListener("click",function(){
+          z7-=1
+          if(z7==0){
+            document.getElementById("count7").innerHTML="100"
+            z7=100
+
+          }else{
+          document.getElementById("count7").innerHTML=`${z7}`
+          }
+        })
+        // ______________________________________________________________
+          // function8
+        document.getElementById("count8").addEventListener("click",function(){
+          z8-=1
+          if(z8==0){
+            document.getElementById("count8").innerHTML="100"
+            z8=100
+
+          }else{
+          document.getElementById("count8").innerHTML=`${z8}`
+          }
+        })
+      // ______________________________________________________________
+        // function9
+      document.getElementById("count9").addEventListener("click",function(){
+          z9-=1
+          if(z9==0){
+            document.getElementById("count9").innerHTML="3"
+            z9=3
+
+          }else{
+          document.getElementById("count9").innerHTML=`${z9}`
+          }
+        })
+            // ______________________________________________________________
+        // function10
+        document.getElementById("count10").addEventListener("click",function(){
+          z10-=1
+          if(z10==0){
+            document.getElementById("count10").innerHTML="10"
+            z10=10
+
+          }else{
+          document.getElementById("count10").innerHTML=`${z10}`
+          }
+        })
+                    // ______________________________________________________________
+        // function11
+        document.getElementById("count11").addEventListener("click",function(){
+          z11-=1
+          if(z11==0){
+            document.getElementById("count11").innerHTML="10"
+            z11=10
+
+          }else{
+          document.getElementById("count11").innerHTML=`${z11}`
+          }
+        })
+                // ______________________________________________________________
+        // function12
+        document.getElementById("count12").addEventListener("click",function(){
+          z12-=1
+          if(z12==0){
+            document.getElementById("count12").innerHTML="10"
+            z12=10
+
+          }else{
+          document.getElementById("count12").innerHTML=`${z12}`
+          }
+        })
+        // ______________________________________________________________
+        // function13
+        document.getElementById("count13").addEventListener("click",function(){
+          z13-=1
+          if(z13==0){
+            document.getElementById("count13").innerHTML="3"
+            z13=3
+
+          }else{
+          document.getElementById("count13").innerHTML=`${z13}`
+          }
+        })
+        // ______________________________________________________________
+        // function14
+        document.getElementById("count14").addEventListener("click",function(){
+          z14-=1
+          if(z14==0){
+            document.getElementById("count14").innerHTML="3"
+            z14=3
+
+          }else{
+          document.getElementById("count14").innerHTML=`${z14}`
+          }
+        })
+        // ______________________________________________________________
+        // function15
+        document.getElementById("count15").addEventListener("click",function(){
+          z15-=1
+          if(z15==0){
+            document.getElementById("count15").innerHTML="3"
+            z15=3
+
+          }else{
+          document.getElementById("count15").innerHTML=`${z15}`
+          }
+        })
+                // ______________________________________________________________
+        // function16
+        document.getElementById("count16").addEventListener("click",function(){
+          z16-=1
+          if(z16==0){
+            document.getElementById("count16").innerHTML="3"
+            z16=3
+
+          }else{
+          document.getElementById("count16").innerHTML=`${z16}`
+          }
+        })
+      </script>
+
+
+
+      <aside>
+        <h5>صلي علي محمد</h5>
+        <h6>لا تنسي الدعاء لوالديك في الفطار</h6>
+      </aside>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
